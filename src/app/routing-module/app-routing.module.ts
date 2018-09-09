@@ -1,37 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { BookListComponent } from '../book/book-list/book-list.component';
-import { AuthorListComponent } from '../author/author-list/author-list.component';
-import { EditorialListComponent } from '../editorial/editorial-list/editorial-list.component';
+import { AthletesComponent } from '../athletes/athletes.component';
+import { SportsComponent } from '../sports/sports.component';
 
 
 const routes: Routes = [
 
     {
-        path: 'books',
+        path: 'athletes',
         children: [
             {
                 path: 'list',
-                component: BookListComponent
+                component: AthletesComponent
             }
         ]
     },
     {
-        path: 'authors',
+        path: 'sports',
         children: [
             {
                 path: 'list',
-                component: AuthorListComponent
-            }
-        ]
-    },
-    {
-        path: 'editorials',
-        children: [
-            {
-                path: 'list',
-                component: EditorialListComponent
+                component: SportsComponent
             }
         ]
     }
