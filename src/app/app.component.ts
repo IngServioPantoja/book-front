@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 /**
- * The app component. This component is the base of the BookStore
+ * The app component. This component is the base of the SportStore
  */
 @Component({
     selector: 'app-root',
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
      * Assigns a title to the web page
      */
     ngOnInit(): void {
-        this.title = "BookStore";
+        this.title = "SportStore";
     }
 
     /**
